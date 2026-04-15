@@ -1,6 +1,6 @@
-# 🧠 NL2SQL Chatbot using Vanna AI 2.0 + FastAPI
+#  NL2SQL Chatbot using Vanna AI 2.0 + FastAPI
 
-## 📌 Project Overview
+##  Project Overview
 
 This project implements an AI-powered Natural Language to SQL (NL2SQL) system using **Vanna AI 2.0** and **FastAPI**.  
 Users can ask questions in plain English, and the system converts them into SQL queries, executes them on a SQLite database, and returns results.
@@ -11,7 +11,7 @@ The system follows a hybrid approach:
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Convert natural language questions → SQL queries
 - Execute queries on SQLite database
@@ -24,7 +24,7 @@ The system follows a hybrid approach:
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 User Query (English)
 ↓
 FastAPI Backend (/chat)
@@ -42,7 +42,7 @@ Response (JSON)
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Purpose |
 |----------|--------|
@@ -56,7 +56,7 @@ Response (JSON)
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone Repository
 
@@ -86,11 +86,11 @@ python seed_memory.py
 ### Run Server
 uvicorn main:app --reload
 
-🌐 API Usage
+ API Usage
 
 Open Swagger UI:
 
-👉 http://127.0.0.1:8000/docs
+ http://127.0.0.1:8000/docs
 
 
 ### POST /chat
@@ -115,7 +115,7 @@ Response:
 }
 
 
-### 🧪 Testing
+###  Testing
 
 The system was tested using 20 predefined questions covering:
 
@@ -128,14 +128,14 @@ Results are documented in RESULTS.md.
 
 
 
-### ⚠️ Challenges Faced
+###  Challenges Faced
 Vanna API version differences caused integration issues
 ToolRegistry and Agent initialization varied across versions
 Streaming responses required async handling
 Memory API differed (text-based vs structured)
 
 
-### 🎯Conclusion
+### Conclusion
 
 This project successfully demonstrates a working NL2SQL system using Vanna AI and FastAPI.
 A hybrid AI + rule-based approach ensures both flexibility and reliability.
