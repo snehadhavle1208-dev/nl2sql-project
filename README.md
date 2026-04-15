@@ -149,3 +149,5 @@ Due to version differences in the installed Vanna 2.0 package, the ToolRegistry 
 To ensure a fully working system, I implemented a compatible approach by directly passing tools via AgentConfig.
 
 All required components (RunSqlTool, VisualizeDataTool, DemoAgentMemory, etc.) are correctly used, and the system works end-to-end as expected.
+
+Excluded environment and cache files using .gitignore
