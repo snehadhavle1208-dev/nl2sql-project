@@ -190,12 +190,12 @@ def main():
     insert_treatments(conn)
     insert_invoices(conn)
 
-    print("✅ Database created successfully!")
-    print("✔ 15 doctors")
-    print("✔ 200 patients")
-    print("✔ 500 appointments")
-    print("✔ 350 treatments")
-    print("✔ 300 invoices")
+    print(" Database created successfully!")
+    print(" 15 doctors")
+    print(" 200 patients")
+    print(" 500 appointments")
+    print(" 350 treatments")
+    print(" 300 invoices")
 
     conn.close()
 

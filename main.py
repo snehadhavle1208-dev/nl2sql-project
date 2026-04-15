@@ -14,7 +14,7 @@ class Query(BaseModel):
     question: str
 
 
-# ✅ SQL validation
+#  SQL validation
 def validate_sql(sql: str):
     sql_lower = sql.lower()
     banned = ["insert", "update", "delete", "drop", "alter", "exec"]
@@ -28,7 +28,7 @@ def validate_sql(sql: str):
     return True
 
 
-# ✅ Run SQL
+#  Run SQL
 def run_sql(query):
     conn = sqlite3.connect("clinic.db")
     cursor = conn.cursor()
@@ -42,7 +42,7 @@ def run_sql(query):
     return columns, rows
 
 
-# ✅ Chat endpoint
+#  Chat endpoint
 @app.post("/chat")
 async def chat(query: Query):
     try:
@@ -63,7 +63,7 @@ async def chat(query: Query):
 
         final_response = final_response.strip()
 
-        # 🔥 FALLBACK if Vanna fails
+        #  FALLBACK if Vanna fails
         if not final_response or "error" in final_response.lower():
 
             question_lower = query.question.lower()
@@ -226,7 +226,7 @@ async def chat(query: Query):
         return {"error": str(e)}
 
 
-# ✅ Health endpoint
+#  Health endpoint
 @app.get("/health")
 def health():
     return {

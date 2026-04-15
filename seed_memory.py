@@ -7,7 +7,7 @@ agent = get_agent()
 async def seed_memory():
     memory = agent.agent_memory
 
-    # ✅ Schema first
+    #  Schema first
     await memory.save_text_memory(
         """
 Database Schema:
@@ -39,7 +39,7 @@ Table: invoices(id, patient_id, invoice_date, total_amount, paid_amount, status)
             "training_data"
         )
 
-    print("✅ Seeded memory successfully!")
+    print(" Seeded memory successfully!")
 
 
 if __name__ == "__main__":
